@@ -1,26 +1,46 @@
 package oopExam;
 
-/*
- NOW, Iphone1 came in 2000, but the new model Iphone2, Iphone3 came in 2001. 
- Assume Iphone1 is a superclass and Iphone2, Iphone3 is the child class of the Iphone1. Implement that here.
- */
+public class Iphone2 extends Iphone1 {
 
-public class Iphone2 {
-	
-	
-	/*1)
-	 *In IPhone2, Initialize a char variable
-	 * userOfIphone2 (M or F). create default and parameterized constructor, a void
-	 * type method iPhone2Info, a parameterized method with same name iPhone2Info
-	 * inside Iphone2 class. Use the super method and super keyword in constructor,
-	 * and super keyword in methods of Iphone2. Call constructor and methods. Can
-	 * you call variable by super keyword? create a public variable inside Iphone1
-	 * and execute it in Iphone2. Execute all of them in TestPhone. [points: 70]
-	 */
+	public char userofIhone2 = 'F';
 
-	/*
-	 * Write a method inside them related to one of the features like dropbox and
-	 * print out related info.
-	 */
-	
+	public Iphone2() {
+		super();
+		super.iphoneInfo();
+		super.name = " Mahamoda Khaton";
+
+		System.out.println(" This is default constructor");
+
+	}
+
+	public Iphone2(char userofIhone2) { // Parameterize Constructor
+		this.userofIhone2 = userofIhone2;
+	}
+
+	public void regularclassInfo() {
+		System.out.println(" Regular class can extend Abstract class"
+				+ " and Abstract class can extend regular class /n Also regular class and Abstract class "
+				+ " can implement interface class + In Regular class method implemented not declared "
+				+ " In interface class two type method Default and Static" + " Regular class instinciated");
+	}
+
+	public void youtubeInfo() {
+		System.out.println("If you open youtube,you can see advertise about Enthrall It course");
+
+	}
+
+	public void dropboxInfo() {
+		System.out.println(" This is dropbox info");
+
+	}
+
+	public void iphone2Info() { // This is void type method
+
+	}
+
+	public void iphone2Info(int a, String name) {// This is parameterize method
+
+	}
+
 }
+

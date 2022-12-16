@@ -1,5 +1,9 @@
 package oopExam;
 
 public interface Watch {
-	// create a method
-}
+	public default void watch() {
+		System.out.println(" This is default type method from interface class");
+	} 
+		
+	}
+

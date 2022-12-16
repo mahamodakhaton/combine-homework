@@ -1,5 +1,9 @@
 package oopExam;
 
 public interface DigitalWatch {
-	// create  a method
+ public static  void digitalWatch() {
+	 System.out.println(" This is digital watch info from static method");
 }
+	
+}
+

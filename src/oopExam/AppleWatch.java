@@ -1,18 +1,32 @@
 package oopExam;
+/* Abstract class can extend Regular class by extend word. 
 
-/*
- write inside multiple line comments what you know about Abstract class
-Here, Can you make a relationship of AppleWatch with Watch, DigitalWatch, and AppleWatchSeries5? [points: 70] . 
- */
+*Abstract Class contains both abstract and non abstract methods
+*Abstract Class names starts with UpperCase 
+*They follow Camel case or Snake case pattern.
+*CamelCase or Snake_case feature considered from second word, not from first word
+*We can inherit Abstract class to Abstract class by extend keyword.
+*Also this class can inherit interface class by implement word
+*/
 
-public abstract class AppleWatch {
-	/*
-Can you create a variable and constructor inside Abstract Class? Can you instantiate it?
-     */
+public abstract class AppleWatch extends AppleWatchSeries5 implements Watch, DigitalWatch {
+
+	// we can variable initialize in abstract class.yes we declared constructor. we
+	// can not instantiate abstract class.
+
+	public int Applewatch = 700;
+
+	public AppleWatch() {
+
+		System.out.println(" This constructor is from abstract class");
+	}
+
+	public abstract void classInfo(); // This is abstract method in abstract class
+
+	public void applewatcchInfo() {
+		System.out.println(" This is none abstract method in abstract class");
+
+	}
 	
-	
-	/*
-Create 2 method: One is abstractClassInfo [which is a non-abstract method, print out all the features of an abstract class compared with Interface, regular class]. what type of method would be the other one if the name is appleWatchInfo? Please create this method
-	 */
 
 }

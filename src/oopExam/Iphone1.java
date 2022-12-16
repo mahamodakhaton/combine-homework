@@ -1,35 +1,108 @@
 package oopExam;
+// Regular class can extend abstract class one time.
 
-/*
-1)  Can you make a relation of Iphone1 with Phone Interface and AppleWatch Abstract class. [Complete the code after answering above]. [points: 30] . 
+//Class is a blueprint from which individual objects are created.
+//Contains only non abstract methods, doesn't contain abstract methods.
+// Methods only implemented but can't be declared.
+//implements and extends keyword is used for inheritance
 
- */
+//But Regular class can implement interface class 
 
-public class Iphone1 {
-
-	/*2)
-	 * Assume 4 private variables here -- price (as int), Info (as String), user (as a char, M or F), madeInUSA (as boolean)
-	 * inside Iphone1 class. If the variables are private how can you use those
-	 * variable? What kind of concept you can use? use it just after the variables.
-	 * get the out come in TestPhone class. Complete this action and go to next.
-	 */
+public class Iphone1 extends AppleWatch implements Phone {
 	
-	/*
-	 * 3) Again, here in Iphone1, we got 4 private variables we know. Create 2
-	 * constructors inside it using that 4 private variables -- default and
-	 * parameterized after those variables (obviously before methods and after
-	 * variables), now go to Iphone2 class.
-	 */
 	
-	/*
-	 * 1)
-	 * Create a method - regularClassInfo and print out all the features of a
-	 * regular class compared with Interface and Abstract class you know.
-	 */
+	
+	public String name; // This is public variable for super keyword method in Iphone2 class.
 
-	/*
-	 * Write a method inside them related to one of the features like youtube and
-	 * print out related info.
-	 */
+	
+	
+	private int price;
+	private String info;
+	private char user;
+	private boolean madeinUsa;
+
+	public Iphone1() {// This is Default constructor
+	}
+
+	public Iphone1(int price, String info, char user, boolean madeinUsa) {
+		this.price = price;
+		this.info = info;
+		this.user = user;
+		this.madeinUsa = madeinUsa;
+	}
+
+	public void iphoneInfo() {
+		System.out.println(" This is Iphoneinformation");
+
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public String getInfo() {
+		return info;
+	}
+
+	public char getUser() {
+		return user;
+	}
+
+	public boolean isMadeinUsa() {
+		return madeinUsa;
+	}
+
+	@Override
+	public void interfaceInfo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void message() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void camera() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void wireless() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void pager() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void watch() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void callInfo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void classInfo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String getUsa() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
